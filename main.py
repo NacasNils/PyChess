@@ -1,11 +1,18 @@
 # Simple pygame program
 
 # Import and initialize the pygame library
+import chess
 import pygame
+from boardAndPiece import *
 pygame.init()
 
 # Set up the drawing window
-screen = pygame.display.set_mode([500, 500])
+screenX = 800
+screenY = 800
+screen = pygame.display.set_mode([screenX, screenY])
+
+# Board
+ChessBoard = Board()
 
 # Run until the user asks to quit
 running = True
@@ -17,6 +24,7 @@ while running:
             running = False
 
     # Fill the background with white
+    
     screen.fill((255, 255, 255))
 
     # Draw a solid blue circle in the center
