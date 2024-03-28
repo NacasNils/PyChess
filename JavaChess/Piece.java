@@ -19,7 +19,7 @@ public abstract class Piece {
 
     protected int value;
 
-    public String[] possibleMoves;     // tror att denna kan va viktig i framtiden
+    public String[] possibleMoves;     // tror att denna kan va viktig i framtiden, ksk vi behöver flytta ut den i boarden. men men.
 
-    void movePiece(){}          // Ingen bra ide här än.
+    abstract void movePiece();         // Ingen bra ide här än.
 }
